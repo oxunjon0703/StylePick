@@ -135,56 +135,58 @@ const WomenService = () => {
             </div>
           </div>
           {/* O'ngda ma'lumotlar */}
-<div className="flex-1 flex flex-col justify-between max-w-lg h-[800px] py-10">
-  <div className="space-y-15 flex-1 flex flex-col justify-center">
-    <div className="text-2xl text-[#000000] font-bold">Do’kon / Zara</div>
-    <h2 className="text-2xl font-bold text-gray-800">
-      Zamonaviy Fit rasmiy kostyum
-    </h2>
-    <p className="text-gray-700">
-      Zamonaviy siluet uchun kesilgan, bu zamonaviy mos rasmiy kostyum
-      keskin chiziqlar va ish uchrashuvlari, to&apos;ylar va kechki
-      tadbirlar uchun juda mos keladi.
-    </p>
-    <div className="flex flex-col gap-3 text-gray-700 text-base">
-      <span>
-        <b>Mahsulot rangi:</b> Qora
-      </span>
-      {/* Ranglar doiralari */}
-      <div className="flex gap-4 py-2">
-        <span className="w-6 h-6 rounded-full bg-black ring-2 ring-black border border-gray-300"></span>
-        <span className="w-6 h-6 rounded-full bg-[#809AB9] border border-gray-300"></span>
-        <span className="w-6 h-6 rounded-full bg-[#373E55] border border-gray-300"></span>
-        <span className="w-6 h-6 rounded-full bg-[#273F8E] border border-gray-300"></span>
-        <span className="w-6 h-6 rounded-full bg-[#009F5E] border border-gray-300"></span>
-      </div>
-      <span>
-        <b>Mahsulot razmeri: S</b>
-      </span>
-      {/* Razmerlar to'rtburchaklar */}
-      <div className="flex gap-2 py-2">
-        <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
-          XS
-        </span>
-        <span className="px-3 py-1 rounded-lg border-2 border-black bg-black text-white font-semibold cursor-pointer">
-          S
-        </span>
-        <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
-          M
-        </span>
-        <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
-          L
-        </span>
-        <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
-          XL
-        </span>
-      </div>
-    </div>
-  </div>
-  <button className="bg-black hover:bg-primary/80 text-white font-semibold px-6 py-3 rounded-lg transition w-full max-w-xs mt-8">
-    Savatchaga qo&apos;shish
-  </button>
-</div>
+          <div className="flex-1 flex flex-col justify-between max-w-lg h-[800px] py-10">
+            <div className="space-y-15 flex-1 flex flex-col justify-center">
+              <div className="text-2xl text-[#000000] font-bold">
+                Do’kon / Zara
+              </div>
+              <h2 className="text-2xl font-bold text-gray-800">
+                Zamonaviy Fit rasmiy kostyum
+              </h2>
+              <p className="text-gray-700">
+                Zamonaviy siluet uchun kesilgan, bu zamonaviy mos rasmiy kostyum
+                keskin chiziqlar va ish uchrashuvlari, to&apos;ylar va kechki
+                tadbirlar uchun juda mos keladi.
+              </p>
+              <div className="flex flex-col gap-3 text-gray-700 text-base">
+                <span>
+                  <b>Mahsulot rangi:</b> Qora
+                </span>
+                {/* Ranglar doiralari */}
+                <div className="flex gap-4 py-2">
+                  <span className="w-6 h-6 rounded-full bg-black ring-2 ring-black border border-gray-300"></span>
+                  <span className="w-6 h-6 rounded-full bg-[#809AB9] border border-gray-300"></span>
+                  <span className="w-6 h-6 rounded-full bg-[#373E55] border border-gray-300"></span>
+                  <span className="w-6 h-6 rounded-full bg-[#273F8E] border border-gray-300"></span>
+                  <span className="w-6 h-6 rounded-full bg-[#009F5E] border border-gray-300"></span>
+                </div>
+                <span>
+                  <b>Mahsulot razmeri: S</b>
+                </span>
+                {/* Razmerlar to'rtburchaklar */}
+                <div className="flex gap-2 py-2">
+                  <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
+                    XS
+                  </span>
+                  <span className="px-3 py-1 rounded-lg border-2 border-black bg-black text-white font-semibold cursor-pointer">
+                    S
+                  </span>
+                  <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
+                    M
+                  </span>
+                  <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
+                    L
+                  </span>
+                  <span className="px-3 py-1 rounded-lg border border-gray-300 bg-white text-gray-700 font-semibold cursor-pointer">
+                    XL
+                  </span>
+                </div>
+              </div>
+            </div>
+            <button className="bg-black hover:bg-primary/80 text-white font-semibold px-6 py-3 rounded-lg transition w-full max-w-xs mt-8">
+              Savatchaga qo&apos;shish
+            </button>
+          </div>
         </div>
 
         {/* Filtr va qidiruv rasm ostida */}

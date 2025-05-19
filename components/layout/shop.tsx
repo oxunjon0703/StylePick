@@ -5,47 +5,43 @@ import Image from "next/image";
 import Link from "next/link";
 import { Search, ChevronDown } from "lucide-react";
 
-const images = [
-  "/shop.png",
-  "/shop2.png",
-  "/shop3.png",
-];
+const images = ["/shop.png", "/shop2.png", "/shop3.png"];
 
 const userName = "User"; // Misol uchun
 
 const products = [
-  { id: 1, img: "/p.png", price: "120 000 so'm" },
-  { id: 1, img: "/p1.png", price: "120 000 so'm" },
-  { id: 1, img: "/p2.png", price: "120 000 so'm" },
-  { id: 1, img: "/p3.png", price: "120 000 so'm" },
-  { id: 1, img: "/p4.png", price: "120 000 so'm" },
-  { id: 1, img: "/p5.png", price: "120 000 so'm" },
-  { id: 1, img: "/p6.png", price: "120 000 so'm" },
-  { id: 1, img: "/p7.png", price: "120 000 so'm" },
-  { id: 1, img: "/p8.png", price: "120 000 so'm" },
-  { id: 1, img: "/p9.png", price: "120 000 so'm" },
-  { id: 1, img: "/p10.png", price: "120 000 so'm" },
-  { id: 1, img: "/p11.png", price: "120 000 so'm" },
-  { id: 1, img: "/p12.png", price: "120 000 so'm" },
-  { id: 1, img: "/p13.png", price: "120 000 so'm" },
-  { id: 1, img: "/p14.png", price: "120 000 so'm" },
-  { id: 1, img: "/p15.png", price: "120 000 so'm" },
-  { id: 1, img: "/p16.png", price: "120 000 so'm" },
-  { id: 1, img: "/p17.png", price: "120 000 so'm" },
-  { id: 1, img: "/p18.png", price: "120 000 so'm" },
-  { id: 1, img: "/p18.png", price: "120 000 so'm" },
-  { id: 1, img: "/p19.png", price: "120 000 so'm" },
-  { id: 1, img: "/p20.png", price: "120 000 so'm" },
-  { id: 1, img: "/p21.png", price: "120 000 so'm" },
-  { id: 1, img: "/p22.png", price: "120 000 so'm" },
+  { id: 1, img: "/p.png", price: "31$" },
+  { id: 1, img: "/p1.png", price: "22$" },
+  { id: 1, img: "/p2.png", price: "12$" },
+  { id: 1, img: "/p3.png", price: "10$" },
+  { id: 1, img: "/p4.png", price: "8$" },
+  { id: 1, img: "/p5.png", price: "15$" },
+  { id: 1, img: "/p6.png", price: "19$" },
+  { id: 1, img: "/p7.png", price: "13$" },
+  { id: 1, img: "/p8.png", price: "30$" },
+  { id: 1, img: "/p9.png", price: "15$" },
+  { id: 1, img: "/p10.png", price: "10$" },
+  { id: 1, img: "/p11.png", price: "28$" },
+  { id: 1, img: "/p12.png", price: "32$" },
+  { id: 1, img: "/p13.png", price: "45$" },
+  { id: 1, img: "/p14.png", price: "23$" },
+  { id: 1, img: "/p15.png", price: "17$" },
+  { id: 1, img: "/p16.png", price: "11$" },
+  { id: 1, img: "/p17.png", price: "15$" },
+  { id: 1, img: "/p18.png", price: "13$" },
+  { id: 1, img: "/p18.png", price: "27$" },
+  { id: 1, img: "/p19.png", price: "7$" },
+  { id: 1, img: "/p20.png", price: "19$" },
+  { id: 1, img: "/p21.png", price: "31$" },
+  { id: 1, img: "/p22.png", price: "18$" },
 ];
 
 const filterMenus: Record<string, string[]> = {
   "Ko'ylak": ["Qishki", "Yozgi", "Atlas", "Yupqa"],
-  "Shim": ["Klassik", "Sport", "Qishki", "Yozgi"],
-  "Yupka": ["Uzun", "Qisqa", "Keng", "Tor"],
-  "Klassik": ["Kostyum", "Ko'ylak", "Shim"],
-  "Poyabzal": ["Krossovka", "Tufli", "Sport", "Kundalik"],
+  Shim: ["Klassik", "Sport", "Qishki", "Yozgi"],
+  Yupka: ["Uzun", "Qisqa", "Keng", "Tor"],
+  Klassik: ["Kostyum", "Ko'ylak", "Shim"],
+  Poyabzal: ["Krossovka", "Tufli", "Sport", "Kundalik"],
 };
 
 const filters = Object.keys(filterMenus);
@@ -69,11 +65,36 @@ const Shop = () => {
           <div className="w-full flex text-xm justify-between items-center h-15">
             {/* Chapda navigation */}
             <div className="flex gap-15">
-              <Link href="/#home" className="font-medium text-black hover:text-primary transition-colors">Bosh sahifa</Link>
-              <Link href="/#about" className="font-medium text-black hover:text-primary transition-colors">Biz haqimizda</Link>
-              <Link href="/women" className="font-medium text-black hover:text-primary transition-colors">Ayollar</Link>
-              <Link href="/men" className="font-medium text-black hover:text-primary transition-colors">Erkaklar</Link>
-              <Link href="/shop" className="font-medium text-black hover:text-primary transition-colors">Do&apos;kon</Link>
+              <Link
+                href="/#home"
+                className="font-medium text-black hover:text-primary transition-colors"
+              >
+                Bosh sahifa
+              </Link>
+              <Link
+                href="/#about"
+                className="font-medium text-black hover:text-primary transition-colors"
+              >
+                Biz haqimizda
+              </Link>
+              <Link
+                href="/women"
+                className="font-medium text-black hover:text-primary transition-colors"
+              >
+                Ayollar
+              </Link>
+              <Link
+                href="/men"
+                className="font-medium text-black hover:text-primary transition-colors"
+              >
+                Erkaklar
+              </Link>
+              <Link
+                href="/shop"
+                className="font-medium text-black hover:text-primary transition-colors"
+              >
+                Do&apos;kon
+              </Link>
             </div>
             {/* O'ngda user ismi va avatar */}
             <div className="flex items-center gap-3">
@@ -146,19 +167,19 @@ const Shop = () => {
             <Search size={20} />
           </button>
         </form>
-
+        
       </div>
       {/* Mahsulotlar grid */}
       <div className="w-full px-8 pb-10 bg-white">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {products.map((product, idx) => (
             <div
-        key={product.id + idx}
-        className={
-          `bg-[#F2EFE6] rounded-xl shadow flex flex-col items-center p-0
+              key={product.id + idx}
+              className={
+                `bg-[#F2EFE6] rounded-xl shadow flex flex-col items-center p-0
           h-[460px]` + // kartochka balandligi qat’iy
-          ((idx % 4 === 1 || idx % 4 === 3) ? " lg:mt-20" : "")
-        }
+                (idx % 4 === 1 || idx % 4 === 3 ? " lg:mt-20" : "")
+              }
             >
               {/* Rasm */}
               <div className="w-full h-100 relative rounded-t-xl overflow-hidden">
@@ -171,7 +192,9 @@ const Shop = () => {
               </div>
               {/* Narx alohida oq blokda */}
               <div className="w-full bg-white py-4 flex justify-center items-center rounded-b-xl">
-                <span className="text-lg font-semibold text-red-500">{product.price}</span>
+                <span className="text-lg font-semibold text-red-500">
+                  {product.price}
+                </span>
               </div>
             </div>
           ))}
@@ -180,5 +203,5 @@ const Shop = () => {
     </>
   );
 };
- 
+
 export default Shop;

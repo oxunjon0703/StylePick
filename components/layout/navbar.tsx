@@ -16,7 +16,12 @@ const Navbar = () => {
       {pathname === "/" && (
         <div className="w-full bg-transparent py-6 shadow-none px-10">
           <div className="w-full flex justify-center items-center">
-            <Image src="/StylePick AI.png" alt="Buxgalter" width={290} height={200} />
+            <Image
+              src="/StylePick AI.png"
+              alt="Buxgalter"
+              width={290}
+              height={200}
+            />
           </div>
         </div>
       )}

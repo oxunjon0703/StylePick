@@ -4,10 +4,13 @@ const Subscribe = () => {
   return (
     <section className="bg-[#F2EFE6] p-8 shadow-md text-center">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">
-        Modadagi eng so‘nggi yangiliklar va shaxsiy stil tavsiyalari uchun obuna bo‘ling
+        Modadagi eng so‘nggi yangiliklar va shaxsiy stil tavsiyalari uchun obuna
+        bo‘ling
       </h2>
       <p className="text-gray-600 mb-6">
-        Sizga mos obrazlarni topishda StylePick AI yordam beradi — trendlar, stil bo‘yicha maslahatlar va eksklyuziv tavsiyalarni elektron pochtangizga yuboramiz.
+        Sizga mos obrazlarni topishda StylePick AI yordam beradi — trendlar,
+        stil bo‘yicha maslahatlar va eksklyuziv tavsiyalarni elektron
+        pochtangizga yuboramiz.
       </p>
       <form className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-0">
         <input
